@@ -1,0 +1,79 @@
+:root {
+    --icon-color: #A0A4AD; 
+    --base-color: #1C1F26;
+    --base-color-focus: #262B36;
+    --base-color-hover: #262B36;
+    --base-color-active: #9CBBFF;
+    --border-color: #4C515C;
+    --transition-duration: .2s
+}
+
+
+body {
+    background-color: black;
+}
+
+
+.default-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: var(--icon-color);
+    border-radius: 50%;
+    background-color: var(--base-color);
+    border: solid 1px;
+    border-color: var(--border-color);
+    transition: background-color var(--transition-duration);
+    cursor: pointer;
+    outline: none;
+}
+
+.default-btn:focus-visible {
+    background-color: var(--base-color-focus);
+}
+
+.default-btn:hover {
+    background-color: var(--base-color-hover);
+}
+
+.default-btn:active {
+    background-color: var(--base-color-active);
+    color: var(--base-color);
+}
+
+
+.default-btn__menu-btn {
+    width: 9rem;
+    height: 9rem; 
+    padding: 2.625rem; 
+}
+
+.default-btn__menu-btn:active svg path {
+    stroke: var(--base-color);
+    transition: stroke var(--transition-duration);
+}
+
+
+.default-btn__heart-btn {
+    width: 6rem;
+    height: 6rem;
+    padding: 1.125rem; 
+}
+
+.default-btn__heart-btn:active svg path {
+    fill: var(--base-color);
+    transition: fill var(--transition-duration);
+}
+
+
+.default-btn__close-btn {
+    width: 3rem;
+    height: 3rem; 
+    padding: 0;
+    border: none;
+}
+
+.default-btn__close-btn:active svg path {
+    fill: var(--base-color);
+    transition: fill var(--transition-duration);
+}
