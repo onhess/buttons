@@ -1,44 +1,40 @@
 :root {
-    --icon-color: #A0A4AD; 
-    --base-color: #1C1F26;
-    --base-color-focus: #262B36;
-    --base-color-hover: #262B36;
-    --base-color-active: #9CBBFF;
-    --border-color: #4C515C;
+    --Light: #A0A4AD;
+    --Highlight: #4C515C; 
+    --Dark: #1C1F26;
+    --Active: #262B36;
+    --Active: #262B36;
+    --Blue: #9CBBFF;
     --transition-duration: .2s
 }
 
-
-body {
-    background-color: black;
-}
 
 
 .default-btn {
     display: flex;
     justify-content: center;
     align-items: center; 
-    color: var(--icon-color);
+    color: var(--Light);
     border-radius: 50%;
-    background-color: var(--base-color);
+    background-color: var(--Dark);
     border: solid 1px;
-    border-color: var(--border-color);
+    border-color: var(--Highlight);
     transition: background-color var(--transition-duration);
     cursor: pointer;
     outline: none;
 }
 
 .default-btn:focus-visible {
-    background-color: var(--base-color-focus);
+    background-color: var(--Active);
 }
 
 .default-btn:hover {
-    background-color: var(--base-color-hover);
+    background-color: var(--Active);
 }
 
 .default-btn:active {
-    background-color: var(--base-color-active);
-    color: var(--base-color);
+    background-color: var(--Blue);
+    color: var(--Dark);
 }
 
 
@@ -49,7 +45,7 @@ body {
 }
 
 .default-btn__menu-btn:active svg path {
-    stroke: var(--base-color);
+    stroke: var(--Dark);
     transition: stroke var(--transition-duration);
 }
 
@@ -61,7 +57,7 @@ body {
 }
 
 .default-btn__heart-btn:active svg path {
-    fill: var(--base-color);
+    fill: var(--Dark);
     transition: fill var(--transition-duration);
 }
 
@@ -74,6 +70,6 @@ body {
 }
 
 .default-btn__close-btn:active svg path {
-    fill: var(--base-color);
+    fill: var(--Dark);
     transition: fill var(--transition-duration);
 }
